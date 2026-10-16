@@ -31,5 +31,9 @@ The webhook is used to receive payment status updates from Velvpay.
 
 == Changelog ==
 
+== Development ==
+
+Canonical pull requests are opened by the VelvPay admission bot after exact-tree validation. The bot cannot push code, merge, or deploy. Every pull request must pass the repository security and quality gate.
+
 = 1.0.3 =
 * Initial release.

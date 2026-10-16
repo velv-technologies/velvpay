@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "repository": "velvpay",
+  "defaultBase": "origin/master",
+  "database": "wordpress-managed",
+  "productionAccess": "none-from-admission-runner",
+  "canonicalPrCreator": "velvpay-admission-bot",
+  "founderEscalation": "policy-decisions-only",
+  "commands": {
+    "focused": "php -l velvpay.php",
+    "full": "composer validate --no-check-publish && git ls-files -z -- '*.php' ':!vendor/**' | xargs -0 -n1 php -l",
+    "governance": "composer validate --no-check-publish"
+  }
+}
